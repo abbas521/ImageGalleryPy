@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+    @-webkit-keyframes animation-rotate {
+        100% {
+        -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @-moz-keyframes animation-rotate {
+        100% {
+        -moz-transform: rotate(360deg);
+        }
+    }
+    
+    @-o-keyframes animation-rotate {
+        100% {
+        -o-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes animation-rotate {
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
+        transform: translateX(0%);
+        height: 100%;
+        width: 100%;
+        transition: transform 0.2s linear;
+        user-select:none;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -o-user-select:none;
+    }
+    body.file-process-open {
+        transform: translateX(-30%);
+        transition: transform 0.2s linear;
+    }
+    
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    
+    .header-container .page-center,
+    .body-container .page-center,
+    .footer-container .page-center {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    .button i {
+        margin-right: 8px;
+    }
+    .header-container-wrapper {
+        flex: 0 0 auto;
+    }
+    .body-container-wrapper {
+        flex: 1 0 auto;
+    }
+    .footer-container-wrapper {
+        flex: 0 0 auto;
+    }
+    .body-container-wrapper .page-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: calc(100vh - 170px);
+    }
+    .body-container i.fa.fa-cloud {
+        font-size: 100px;
+        color: #2196f3;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.48);
+    }
+    .custom-header-bg {
+        background: #2196F3;
+        padding: 20px 0;
+        font-family: 'Open Sans', sans-serif;
+        box-shadow: 0 0 12px #000;
+    }
+    .custom-footer-bg {
+        position: fixed;
+        background: #2196f3;
+        width: fit-content;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 0 12px #000;
+    }
+    .logo {
+        width: 70%;
+        font-size: 35px;
+        color: #ffffff;
+        font-weight: 100;
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    
+    .navigation {
+        float: center;
+        width: 30%;
+    }
+    
+    .navigation ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        float: right;
+    }
+    
+    .navigation ul li {
+        display: inline-block;
+    }
+    
+    .button {
+        white-space: nowrap;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+        background: #2196f3;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: all .15s ease;
+        transition: all .15s ease;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    
+    .button:hover {
+        color: #6e6e6e;
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    }
+    
+    .button:active {
+        color: #555;
+        background-color: #f6f9ff;
+        transform: translateY(1px);
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    }
+</style>
+</head>
+
+<body>
+    <div class="header-container-wrapper">
+        <div class="header-container">
+            <div class="custom-header-bg">
+                <div class="logo" align ="right">Files are Uploaded Successfully</div>
+            </div>
+        </div>
+        </div>
+
+
+
+    <div class="body-container-wrapper">
+        <div class="body-container">
+            <div class="page-center">
+             
+            <ul>
+                <a href="gallery" class="button click-upload"><i class="fa fa-cloud-upload" aria-hidden="true"></i>View Gallery</a></ul>
+                
+                <ul>
+                <a href="/" class="button open-progress"><i class="fa fa-tasks" aria-hidden="true"></i>Go Back To Upload</a>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container-wrapper">
+        <div class="footer-container">
+            <div class="custom-footer-bg">
+            <div class="page-center">
+                <p>@Copyright Abbas</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
